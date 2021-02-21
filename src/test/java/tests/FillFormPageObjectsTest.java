@@ -6,10 +6,10 @@ import pages.FormPage;
 public class FillFormPageObjectsTest extends TestBase{
     FormPage formPage = new FormPage();
 
-    @Test
+    /*@Test
     public void fillFormTest(){
         formPage.openPage();
         formPage.fillForm();
         formPage.checkResult();
-    }
+    }*/
 }

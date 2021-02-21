@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class FillFormWithStepsTest extends TestBase {
 
     @Test
-    @Tag("positive_test")
+    @Tag("positive")
     void confirmationIsDispplayedTest() {
         Faker faker = new Faker();
 
