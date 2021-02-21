@@ -33,7 +33,7 @@ public class FillFormWithStepsTest extends TestBase {
                 address = faker.address().fullAddress(),
                 month = "January",
                 year = faker.number().numberBetween(1900, 2100) + "",
-                day = faker.number().numberBetween(1, 29) + "",
+                day = faker.number().numberBetween(1, 27) + "",
                 hobby = "Reading",
                 picture = "file.png";
 
