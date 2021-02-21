@@ -1,6 +1,7 @@
 package tests;
 
 import com.github.javafaker.Faker;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +15,7 @@ import static io.qameta.allure.Allure.step;
 public class FillFormOriginalTest extends TestBase {
 
     @Test
-    @Tag("positive")
+    @DisplayName("Fill form negative test")
     void confirmationIsDispplayedTest() {
         Faker faker = new Faker();
 
@@ -63,6 +64,7 @@ public class FillFormOriginalTest extends TestBase {
             $("#stateCity-wrapper").$(byText(city)).click();
 
             // submit the form
+            // let's do not click just to make it negative
             $("#submit").click();
         });
 
