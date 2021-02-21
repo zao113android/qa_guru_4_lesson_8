@@ -4,6 +4,8 @@ import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byClassName;
 import static com.codeborne.selenide.Selectors.byText;
@@ -50,7 +52,8 @@ public class FillFormWithStepsTest extends TestBase {
         $("#subjectsInput").setValue(subject);
         $(".subjects-auto-complete__menu-list").$(byText(subject)).click();
         $(byText(hobby)).click();
-        $("#uploadPicture").uploadFromClasspath("src/test/resources/img/" + picture);
+       // $("#uploadPicture").uploadFromClasspath("src/test/resources/img/" + picture);
+        $("#uploadPicture").uploadFile(new File("src/test/resources/img/" + picture));
         $("#currentAddress").setValue(address);
         $("#state").scrollTo();
         $("#state").click();
