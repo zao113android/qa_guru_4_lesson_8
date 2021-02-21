@@ -3,7 +3,7 @@ package tests;
 import org.junit.jupiter.api.Test;
 import pages.FormPage;
 
-public class FillFormPageObjectsTest {
+public class FillFormPageObjectsTest extends TestBase{
     FormPage formPage = new FormPage();
 
     @Test

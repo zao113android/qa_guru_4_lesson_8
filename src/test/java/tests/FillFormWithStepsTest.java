@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selectors.byClassName;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class FillFormWithStepsTest {
+public class FillFormWithStepsTest extends TestBase {
 
     @Test
     @Tag("positive_test")

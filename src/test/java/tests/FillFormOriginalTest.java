@@ -11,8 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$x;
 import static io.qameta.allure.Allure.step;
 
-public class FillFormOriginalTest {
-
+public class FillFormOriginalTest extends TestBase {
 
     @Test
     @Tag("positive_test")
