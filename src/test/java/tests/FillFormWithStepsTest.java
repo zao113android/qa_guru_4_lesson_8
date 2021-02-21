@@ -33,7 +33,7 @@ public class FillFormWithStepsTest extends TestBase {
                 year = faker.number().numberBetween(1900, 2100) + "",
                 day = faker.number().numberBetween(1, 29) + "",
                 hobby = "Reading",
-                picture = "file.jpg";
+                picture = "file.png";
 
         // open form
         open("https://demoqa.com/automation-practice-form");
