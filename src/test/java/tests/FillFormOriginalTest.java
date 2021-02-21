@@ -31,7 +31,7 @@ public class FillFormOriginalTest extends TestBase {
                 address = faker.address().fullAddress(),
                 month = "January",
                 year = faker.number().numberBetween(1900, 2100) + "",
-                day = faker.number().numberBetween(1, 29) + "",
+                day = faker.number().numberBetween(1, 27) + "",
                 hobby = "Reading",
                 picture = "file.jpg";
 
@@ -54,7 +54,7 @@ public class FillFormOriginalTest extends TestBase {
             $(".subjects-auto-complete__menu-list").$(byText(subject)).click();
             $(byText(hobby)).click();
             //$("#uploadPicture").uploadFromClasspath("img/" + picture);
-            $("#uploadPicture").uploadFromClasspath("src/test/resources/img/" + picture);
+            $("#uploadPicture").uploadFromClasspath("./src/test/resources/img/" + picture);
             $("#currentAddress").setValue(address);
             $("#state").scrollTo();
             $("#state").click();
