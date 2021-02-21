@@ -53,7 +53,7 @@ public class FillFormWithStepsTest extends TestBase {
         $(".subjects-auto-complete__menu-list").$(byText(subject)).click();
         $(byText(hobby)).click();
        // $("#uploadPicture").uploadFromClasspath("src/test/resources/img/" + picture);
-        $("#uploadPicture").uploadFile(new File("src/test/resources/img/" + picture));
+        $("#uploadPicture").uploadFile(new File("./src/test/resources/img/" + picture));
         $("#currentAddress").setValue(address);
         $("#state").scrollTo();
         $("#state").click();

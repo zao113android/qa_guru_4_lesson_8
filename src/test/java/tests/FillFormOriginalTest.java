@@ -54,7 +54,7 @@ public class FillFormOriginalTest extends TestBase {
             $(".subjects-auto-complete__menu-list").$(byText(subject)).click();
             $(byText(hobby)).click();
             //$("#uploadPicture").uploadFromClasspath("img/" + picture);
-            $("#uploadPicture").uploadFromClasspath("./src/test/resources/img/" + picture);
+            $("#uploadPicture").uploadFromClasspath("img/" + picture);
             $("#currentAddress").setValue(address);
             $("#state").scrollTo();
             $("#state").click();
