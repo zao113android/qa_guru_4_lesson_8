@@ -1,6 +1,7 @@
 package tests;
 
 import com.github.javafaker.Faker;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.FormPage;
 
@@ -23,11 +24,12 @@ public class FillFormPageObjectsTest extends TestBase {
             address = faker.address().fullAddress(),
             month = "January",
             year = faker.number().numberBetween(1900, 2100) + "",
-            day = faker.number().numberBetween(1, 27) + "",
+            day = faker.number().numberBetween(10, 27) + "",
             hobby = "Reading",
             picture = "file.png";
 
     @Test
+    @Tag("positive")
     public void fillFormPageTest() {
         formPage.openForm();
         formPage.fillUserInfo(firstName, lastName, gender, email, number);
