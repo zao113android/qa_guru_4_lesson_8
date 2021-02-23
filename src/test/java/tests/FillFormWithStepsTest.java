@@ -32,7 +32,10 @@ public class FillFormWithStepsTest extends TestBase {
                 address = faker.address().fullAddress(),
                 month = "January",
                 year = faker.number().numberBetween(1900, 2100) + "",
-                day = faker.number().numberBetween(1, 27) + "",
+                // there should be a condition for generation
+                // if it's less than 10, then add 0 before the number
+                // example: it's 5, then we need "05"
+                day = faker.number().numberBetween(10, 28) + "",
                 hobby = "Reading",
                 picture = "file.png";
 
